@@ -1,0 +1,52 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Client.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Client.Views.CustomerView"
+             x:DataType="vm:CustomerViewModel"
+                     Background="{DynamicResource PrimaryBackgroundColor}"
+             Foreground="{DynamicResource PrimaryTextColor}">
+   <Design.DataContext>
+      <vm:CustomerViewModel></vm:CustomerViewModel>
+   </Design.DataContext>
+
+   <StackPanel>
+      <TextBlock Classes="h1" Text="Våra Kunder"></TextBlock>
+
+         <Border BorderBrush="White" BorderThickness="0 0 0 2" Padding="0 0 0 5">
+            <Grid ColumnDefinitions="100,100,100,200,*,60,60" ShowGridLines="False">
+               <Label  Content="KundId"  />
+               <Label Padding="10 0 0 0" Grid.Column="1" Content="Namn"/>
+               <Label Grid.Column="2" Content="Efternamn"/>
+               <Label Grid.Column="3" Content="Email" />
+               <Label Grid.Column="4" Content="Telefon Nummer" />
+            </Grid>
+         </Border>
+      <ItemsControl ItemsSource="{Binding Customers}">
+         <ItemsControl.ItemTemplate>
+            <DataTemplate>
+               <Grid ColumnDefinitions="100,100,100,200,*,60,60" ShowGridLines="False">
+                 
+                  
+                      <Label  Content="{Binding CustomerId}"/>
+                     <Label Grid.Column="1" Padding="10 0 0 0" Content="{Binding FirstName}"/>
+                     <Label Grid.Column="2" Content="{Binding LastName}"/>
+                     <Label Grid.Column="3" Content="{Binding Email}" />
+                     <Label Grid.Column="4" Content="{Binding PhoneNumber}"  />
+                      <Button Grid.Column="5" Command="{Binding Edit}" FontFamily="{DynamicResource IconFont}" Foreground="LightGreen" Padding="10 0 0 10" Content="&#xE34C;"></Button>
+                     <Button Grid.Column="6" Command="{Binding Delete}" FontFamily="{DynamicResource IconFont}" Foreground="Red" Padding="10 0 0 10" Content="&#xE4A6;"></Button>
+   
+                 
+
+
+               </Grid>
+
+            </DataTemplate>
+         </ItemsControl.ItemTemplate>
+      </ItemsControl>
+   </StackPanel>
+
+
+</UserControl>

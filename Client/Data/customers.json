@@ -1,0 +1,52 @@
+[
+    {
+    "firstName":"Tim",
+    "lastName": "Tell",
+    "customerId":"99ad46a0-ddc1-4f57-a729-f9cc5007a511", 
+    "email":"t.tim@me.com",
+    "phoneNumber": "4567-56789",
+    "addressLine": "Johanneberg 9",
+    "city": "Göteborg",
+    "postNumber":"45628"
+},
+ {
+    "firstName":"Oskar",
+    "lastName": "Aldius",
+    "customerId":"2c1365c1-9411-4a78-8177-253710b5e43a", 
+    "email":"o.oskar@me.com",
+    "phoneNumber": "0707-545172",
+    "addressLine": "Skälebräckeliden 18",
+    "city": "Kungälv",
+    "postNumber":"44233"
+},
+ {
+    "firstName":"Bertil",
+    "lastName": "björn",
+    "customerId":"c5e170a1-66ad-48a9-93a3-15b2fff6f233", 
+    "email":"Bertil.Björn@telia.com",
+    "phoneNumber": "2342-987653",
+    "addressLine": "Björnstigen 8",
+    "city": "Lund",
+    "postNumber":"67238"
+},
+ {
+    "firstName":"Sten",
+    "lastName": "Grenkvist",
+    "customerId":"871b3c40-b5ec-466f-b03e-9cf034f15a9d", 
+    "email":"gren.grenkvist@hotmail.com",
+    "phoneNumber": "9820-3717019",
+    "addressLine": "Trägatan 1",
+    "city": "Kungälv",
+    "postNumber":"44233"
+},
+ {
+    "firstName":"Grutuss",
+    "lastName": "Svantesson",
+    "customerId":"7b34c372-555e-4cba-b803-4d6b0cf46fbd", 
+    "email":"g.svantesson@gmail.com",
+    "phoneNumber": "031-767813",
+    "addressLine": "Trollstigen 5",
+    "city": "Trollbyn",
+    "postNumber":"57631"
+}
+]
