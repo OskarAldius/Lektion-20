@@ -33,8 +33,8 @@
                      <Label Grid.Column="1" Content="{Binding Name}"/>
                      <Label Grid.Column="2" Content="{Binding SupplierName}"/>
                      <Label Grid.Column="3" Content="{Binding Price}" HorizontalAlignment="Right" />
-                     <Button Grid.Column="4" Command="{Binding Edit}" FontFamily="{DynamicResource IconFont}" Foreground="LightGreen" Padding="10 0 0 10" Content="&#xE34C;"></Button>
-                     <Button Grid.Column="5" Command="{Binding Delete}" FontFamily="{DynamicResource IconFont}" Foreground="Red" Padding="10 0 0 10" Content="&#xE4A6;"></Button>
+                     <Button Grid.Column="4" Command="{Binding $parent[UserControl[].DataContext.EditCommand}" FontFamily="{DynamicResource IconFont}" CommandParameter="{Binding Id}" Foreground="LightGreen" Padding="10 0 0 10" Content="&#xE34C;"></Button>
+                     <Button Grid.Column="5" Command="{Binding $parent[UserControl[].DataContext.DeleteCommand}" FontFamily="{DynamicResource IconFont}" CommandParameter="{Binding Id}" Foreground="Red" Padding="10 0 0 10" Content="&#xE4A6;"></Button>
 
    
                  
